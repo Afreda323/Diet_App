@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta name="google-site-verification" content="mBb2t1dykj_wmjpikaASy0rGsBc-vp3LVdL6GfIpPUU" />
+    <meta name="description" content="Diet made easy" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,300' rel='stylesheet' type='text/css'>
+    
+    <title>Make Those Gainz</title>
+    </head>
+<body>
+<div class="page">
+	<header class="page-header">
+	
+		<div class="container">
+			<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+			<h1>Calories Made Easy</h1>
+			<h2 class="lead"><br><b>Diets suck, we know....</b><br><br>
+							But that doesn't mean they can't be easy.<br>
+							Nobody wants to sit around all day eating salad and yogurt, and you don't have to.<br class="anch">
+							 Because the most important part of a diet is the calories. <br><br>
+							 If you want to lose weight, Eat Less Calories. If you want to gain, Eat More
+							
+			 </h2>
+			 <h3 class="text-center lead">
+			  Scroll Down To Start
+			 <br>
+			 or
+			 <br>
+			 <button type="button" class="btn btn-header" data-toggle="modal" data-target=".modal">Click Here To Learn More</button>
+			</h3>
+			 </div>
+			 </div>
+		</div>
+		
+	</header>
+	<!-- Large modal -->
+	
+	
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="learnMore">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Learn More</h4>
+	      </div>
+	      <div class="modal-body">
+	        This application calculates your Basal Metabolic Rate(BMR), which is how many calories you burn at a resting state in 24 hours. It is the bare minimum amount of calories you could possibly burn. <br><br>
+	        We then calculate your daily burned calories when you select your activity level and add it to your BMR.<br>
+	        Once you select your goal weight and time frame, we then calculate the amount of  extra calories you would have to burn per day and subtract it from your BMR. If you are looking to gain weight, we add it to your BMR. <br><br>
+	        If your calories happen to fall to an unhealthy amount, we ask you to redefine your goal time frame to a more realistic and healthy one. <br><br>
+	        We hope you enjoy using our application, and look forward to adding more functionality and improving it over time.<br><br> 
+	      
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<label for="height">How Tall Are You?(Inches)</label>
+				<br>
+				<input type="number" name="height" id="height" class="form-control" value=""/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<label for="age">How Old Are You?</label>
+				<br>
+				<input type="number" name="age" id="age" class="form-control" value=""/>
+			</div>
+		</div>
+		<div class="row">
+			<form class="form">
+			<div class="col-md-8 col-md-offset-2">
+			<label for="weight">How Much Do You Weigh?(lbs)</label>
+			<br>
+			<input type="number" name="weight" id="bodyWeight" class="form-control" value=""/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<label for="howMuch">How Much Do You Want To Weigh?(lbs)</label>
+				<br>
+				<input type="number" name="howMuch" id="goal" class="form-control" value=""/>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<label for="sex">Male or Female?</label>
+			<br>
+			<select name="sex" class="form-control" id="sex">
+				<option value="0" selected disabled="">Please Select One</option>
+				<option value="true">Male</option>
+				<option value="false">Female</option>
+			</select>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<label for="time">How Long Do You Have?</label>
+				<br>
+				<select name="time" class="form-control" id="days">
+					<option value="0" selected disabled="">Please Select One</option>
+					<option value="7">1 Week</option>
+					<option value="30">1 Month</option>
+					<option value="90">3 Months</option>
+					<option value="180">6 Months</option>
+					<option value="365">1 Year</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<label for="activity">How Active Are You?</label>
+				<br>
+				<select name="activity" class="form-control" id="activity">
+					<option value="0" selected disabled="">Please Select One</option>
+					<option value="1.2">Not Active at All</option>
+					<option value="1.375">Kind of Active</option>
+					<option value="1.55">Active</option>
+					<option value="1.725">Very Active</option>
+					<option value="1.9">Extremely Active</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="col-md-12">
+			<input type="button" name="submit" value="Let's Do This!" id="submit" class="btn center-block"/>
+		</div>
+		</form>
+		<div class="container">
+		<div class="row">
+		<div id="stats" class="col-md-8 col-md-offset-2 hide">
+			<h1 class="text-center" style="padding: 1em 0;">Is This Correct?</h1>
+			
+			<h2 class="title">Your Weight:</h2>
+			<h3 id="weight"></h3>
+			
+			<br>
+		
+			<h2 class="title">Your Goal:</h2>
+			<h3 id="howMuch"></h3>
+			
+			<br>
+			
+			<h2 class="title">Your Time:</h2>
+			<h3 id="time"></h3>
+			
+			<br>
+			
+			<h2 class="title">Your Are:</h2>
+			<h3 id="active"></h3>
+			<br>
+			<div class="buttons" style="text-align: center;">
+			<button class="btn green" id="confirm">Correct</button>
+			<button class="btn red" id="decline">Wrong</button>
+			</div>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="calories" class="col-md-8 col-md-offset-2 hide"  style="padding-bottom: 5em;">
+				<h1 class="text-center" style="padding: 1em 0; padding-top: 0;">It's Time</h1>
+				<h2 class="title" id="valid">You Need To Eat:</h2>
+				<h3 id="gainz"></h3>
+				<h3 id="gainz2"></h3>
+				<button class="btn hide" id="up" style="margin-bottom: 1.5em;">Return to Top</button>
+				
+				<br>
+				
+				<h2 class="title">Base Calories:</h2>
+				<h3 id="cal"></h3>
+				
+				<br>
+				
+				<h2 class="title">Calories After Activity:</h2>
+				<h3 id="burned"></h3>
+				
+				<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer">
+		<h3>Good Luck</h3>
+		<div class="foot">Developed By <a href="http://antfreda.com/">AntFreda.com</a></div>
+	</footer>
+	<script src="js/jquery-1.12.3.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
+
+  	
+  	
+  </body>
+  
+  
+  </html>

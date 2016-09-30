@@ -1,0 +1,112 @@
+body{
+	font-family: open sans, sans-serif;
+	font-weight: 300;
+}
+.container, .buttons{
+	padding-bottom: 3em;
+}
+header{
+	margin-top: 0 !important;
+	width: 100% !important;
+	color: white;
+	background: #FF512F; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #FF512F , #DD2476); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #FF512F , #DD2476); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 3em;
+	padding-bottom: 3em !important;
+}
+
+header h1{
+	margin-top: 0;
+}
+input, select{
+	width: 100%;
+	height: 2em;
+	margin-bottom: 10px;
+}
+select{
+	height: 3em;
+}
+.btn{
+	width: auto;
+	padding:0em 3em;
+	height: 2.5em;
+	background: none;
+	border: 1px solid #b5b5b5;
+	transition: background-color .5s, color .5s;
+}
+.btn:active, .btn:hover{
+	background-color: #FF512F;
+	color: white;
+}
+
+.title{
+	margin-bottom: 1px;
+}
+h2{
+	margin-top: 2px;
+}
+.hide{
+	display: none;
+}
+.green{
+	color: rgba(0, 0, 0, 0.64);
+	background: #2fff32;
+	transition: color .5s, background-color .5s;	
+}
+.red{
+	color: rgba(255, 255, 255, 0.85);
+	background-color: #ff1919;
+}
+.green:hover, .green:active, .red:hover, .red:active{
+	color: black;
+	background-color: white;
+	}
+
+#calories{
+	height: 30em;
+	background-color: white;
+}
+.footer{
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 5em;
+	color: #808080;
+	background-color: #262626;
+	padding-bottom: 3em;
+}
+
+
+/******   Modal   ******/
+.btn-header{
+	font-weight: 300;
+	margin-top: -5px !important;
+	border: 1px solid rgba(0, 0, 0, 0);
+	font-size: 1em;
+	transition: border .5s, font-size .5s, background-color .5s;
+}
+.btn-header:hover, .btn-header:active, .btn-header:visited{
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 1.02em;
+	border: 1px solid white;
+}
+.modal-header, .modal-footer{
+	background-color: #f0f0f0;
+}
+.btn-close{
+	background-color: white;
+}
+
+/*animate*/
+@keyframes fade {
+	from{
+		opacity: 0;
+	}
+}
+.fader{
+	opacity: 1;
+	animation-name: fade;
+	animation-duration: 3s;
+}
+
